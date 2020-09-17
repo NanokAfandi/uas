@@ -101,7 +101,15 @@ void airterjun(){
   rect(320, 250, 150, 200);
  
 }
-void balon();
+
+float speed=1;
+float n;
+void balon(){
+  speed=speed+0.3;
+  stroke(0);
+  strokeWeight(3);
+
+}
 
 void draw(){
   background(#5885FF);
