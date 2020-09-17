@@ -110,6 +110,8 @@ void balon(){
   strokeWeight(1);
   fill(#FA03FF);
   ellipse(200+speed,200,200,90);
+  fill(#F94CFC);
+  ellipse(200+speed,200,200,70);
   fill(#E04700);
   rect(150+speed,240,100,57);
 
