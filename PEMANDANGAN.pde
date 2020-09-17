@@ -101,6 +101,7 @@ void airterjun(){
   rect(320, 250, 150, 200);
  
 }
+void balon();
 
 void draw(){
   background(#5885FF);
@@ -113,4 +114,5 @@ void draw(){
   kolam();
   airterjun();
   batu();
+  balon();
 }
