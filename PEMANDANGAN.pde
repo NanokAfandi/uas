@@ -105,7 +105,7 @@ void airterjun(){
 float speed=1;
 float n;
 void balon(){
-  speed=speed+0.3;
+  speed=speed+1;
   stroke(0);
   strokeWeight(1);
   fill(#FA03FF);
@@ -116,6 +116,9 @@ void balon(){
   ellipse(200+speed,200,200,50);
   fill(#E04700);
   rect(150+speed,240,100,57);
+  if(speed>600){
+    speed=-500;
+  }
 
 }
 
