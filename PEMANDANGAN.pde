@@ -79,7 +79,8 @@ void tanah(){
   fill(#DEAE02);
   rect(0, 350,700,300);
 }  
-
+float s1=0;
+float s2=0.5;
 void kolam(){
   fill(#B2A061);
   ellipse(400, 460, 600, 165);
@@ -87,8 +88,12 @@ void kolam(){
   ellipse(400, 450, 550, 105);
   fill(#00D1CB);
   ellipse(400, 460, 450, 90);
+  s1=s1+s2;
   fill(#00E8FF);
-  ellipse(400, 460, 240, 60);
+  ellipse(400, 460, 240+s1, 60+s1);
+  if((s1>30)||(s1<0)){
+  s2=s2*-1;
+  }
 }
 
 void airterjun(){
