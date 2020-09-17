@@ -101,25 +101,6 @@ void airterjun(){
   rect(320, 250, 150, 200);
  
 }
-void pohon(){
-fill(235,186,84); //pohon 
-  noStroke();
-  smooth();
-  beginShape();
-  vertex(715,700);
-  vertex(790,700);
-  vertex(760,450);
-  vertex(740,450);
-  endShape();
-  fill(71,162,26);
-  ellipse(700,400,300,150);
-  ellipse(700,450,150,100);
-  ellipse(770,450,300,150);
-  ellipse(760,340,200,60);
-  ellipse(760,400,90,150);
-  endShape();
-  stroke(0);
-}
 
 void draw(){
   background(#5885FF);
@@ -132,5 +113,4 @@ void draw(){
   kolam();
   airterjun();
   batu();
-  pohon();
 }
