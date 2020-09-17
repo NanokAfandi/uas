@@ -1,30 +1,40 @@
+float a;
+float b;
 void setup(){
   
   size(700,500);
 
 }
-void awan(){
+void awan(float x,float y){
+   a =a+1;
+   if (a>500){
+   a=-300;
+   }
 fill(#EFF0ED);
 noStroke();
-ellipse(190, 60, 120, 90);
-ellipse(210, 65, 110, 115);
-ellipse(260, 65, 120, 130);
-ellipse(290, 65, 110, 115);
-ellipse(310, 65, 110, 90);
+ellipse(190+a, 60, 120, 90);
+ellipse(210+a, 65, 110, 115);
+ellipse(260+a, 65, 120, 130);
+ellipse(290+a, 65, 110, 115);
+ellipse(310+a, 65, 110, 90);
 }
 
-void awan2(){
+void awan2(float c, float d){
+  b= b-1.5;
+  if(b<-500){
+    b=300;
+}
 fill(#D5DEDD);
-ellipse(320, 150, 120, 90);
-ellipse(340, 155, 110, 115);
-ellipse(390, 155, 120, 130);
-ellipse(420, 155, 110, 115);
-ellipse(440, 155, 110, 90);
+ellipse(320+b, 150, 120, 90);
+ellipse(340+b, 155, 110, 115);
+ellipse(390+b, 155, 120, 130);
+ellipse(420+b, 155, 110, 115);
+ellipse(440+b, 155, 110, 90);
 noStroke();
 }
 
 void matahari(){
-  fill(#FFB905);
+  fill(255,255,0,200);
   ellipse(370, 70, 100, 100);
 }  
 
@@ -108,9 +118,9 @@ fill(235,186,84); //pohon
 
 void draw(){
   background(#5885FF);
-  awan();
+  awan(a,1);
   matahari();
-  awan2();
+  awan2(b,1);
   rumput();
   tebing();
   tanah();
