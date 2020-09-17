@@ -112,6 +112,8 @@ void balon(){
   ellipse(200+speed,200,200,90);
   fill(#F94CFC);
   ellipse(200+speed,200,200,70);
+  fill(#CA77CB);
+  ellipse(200+speed,200,200,50);
   fill(#E04700);
   rect(150+speed,240,100,57);
 
