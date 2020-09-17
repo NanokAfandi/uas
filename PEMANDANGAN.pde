@@ -107,10 +107,11 @@ float n;
 void balon(){
   speed=speed+0.3;
   stroke(0);
-  strokeWeight(3);
+  strokeWeight(1);
   fill(#FA03FF);
   ellipse(200+speed,200,200,90);
-  rect(150+speed,230,100,57);
+  fill(#E04700);
+  rect(150+speed,240,100,57);
 
 }
 
